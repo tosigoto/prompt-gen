@@ -1,0 +1,115 @@
+##################################################
+# 1. 依存関係と環境の除外 (Node.js & Python)
+##################################################
+
+# Node.jsパッケージの依存関係
+**/node_modules/
+
+# Python仮想環境（一般的な名前）
+**/venv/
+**/.venv/
+**/env/
+
+# Pythonのコンパイル済みファイルとキャッシュ
+**/__pycache__/
+*.pyc
+*.pyd
+
+# Pythonのメタデータとビルド成果物
+*.egg-info/
+**/.tox/
+**/.mypy_cache/
+**/.pytest_cache/
+*.whl
+*.tar.gz
+
+# JavaScript/TypeScriptのビルドキャッシュと成果物
+**/.tsbuildinfo
+**/coverage/
+**/lcov-report/
+
+
+##################################################
+# 2. ビルド成果物と一時ファイルの除外
+##################################################
+
+# ビルド出力と成果物
+**/dist/
+**/build/
+**/target/
+**/out/
+**/temp/
+**/tmp/
+
+# ログファイルと設定ファイル
+*.log
+*.tmp
+.env
+.env.local
+.env.development
+.env.production
+.DS_Store
+Thumbs.db
+
+# エディタとIDEの隠しファイル
+**/.vscode/
+**/.idea/
+**/.history/
+# .gitは通常、ツールによって自動的に除外されるが、念のため
+**/.git/
+
+# パッケージロックファイル（Gitで追跡する場合は除外しないこともありますが、AIコンテキストからは除外推奨）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+
+##################################################
+# 3. バイナリーアセットとメディアの除外
+##################################################
+
+# 画像ファイル
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[pP][nN][gG]
+*.[gG][iI][fF]
+*.[bB][mM][pP]
+*.[tT][iI][fF]
+*.[wW][eE][bB][pP]
+*.[iI][cC][oO]
+# SVGはテキストベースだが、アセットとして除外することが多い
+*.[sS][vV][gG] 
+
+# 動画/音声ファイル
+*.[mM][pP]4
+*.[mM][pP]3
+*.[wW][aA][vV]
+*.[aA][vV][iI]
+*.[mM][kK][vV]
+*.[wW][mM][vV]
+
+# ドキュメントとPDF
+*.[pP][dD][fF]
+*.[dD][oO][cC][xX]
+*.[xX][lL][sS][xX]
+*.[pP][pP][tT][xX]
+
+# 実行ファイルとライブラリ
+*.[eE][xX][eE]
+*.[dD][lL][lL]
+*.[sS][oO]
+*.[cC][lL][aA][sS][sS]
+*.[jJ][aA][rR]
+*.[cC][oO][mM]
+*.[oO][bB][jJ]
+*.[lL][iI][bB]
+*.[aA]
+*.[bB][iI][nN]
+
+# アーカイブファイル
+*.[zZ][iI][pP]
+*.[rR][aR]r
+*.[tT][aA][rR]
+*.[gG][zZ]
+*.[bB][zZ]
+*.[iI][sS][oO]
